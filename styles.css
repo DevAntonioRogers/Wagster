@@ -1,0 +1,21 @@
+
+
+
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navbar--container{
+  background-color: white;
+  box-shadow: 0 1px 3px rgb(17 24 39 / 9%);
+}
+
+body{
+  background-color: #0077b6;
+}
+
