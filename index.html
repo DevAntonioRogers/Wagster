@@ -5,32 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="https://kit.fontawesome.com/d96d1a7bdb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar--container px-5 justify-content-between">
-      <div>
-        <a href="#" class="navbar-brand"> Wagster</a>
-
+    <nav class="navbar navbar-expand-lg navbar--container justify-content-between align-items-center navbar-light">
+      <div class="container-fluid">
+        <div>
+          <a href="#" class="navbar-brand">WAGSTER</a>
+        </div>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler ml-auto"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarNav"
+          data-target="#navBar"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
 
-      <div>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navBar">
+          <ul class="navbar-nav mx-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
@@ -46,10 +46,10 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div class="d-none d-md-block">
-        <button type="button" class="btn btn-primary mr-4">Primary</button>
-        <button type="button" class="btn btn-primary">Primary</button>
+        <div class="d-none d-lg-block">
+          <button type="button" class="btn btn-primary mr-4">Log In</button>
+          <button type="button" class="btn btn-primary">Sign Up</button>
+        </div>
       </div>
     </nav>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
