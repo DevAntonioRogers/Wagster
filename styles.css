@@ -12,14 +12,10 @@
 }
 
 
+
 .navbar--container{
   background-color: white;
   box-shadow: 0 1px 3px rgb(17 24 39 / 9%);
-}
-
-body{
-  background-color: #0077b6;
-
 }
 
 .navbar-brand{
@@ -44,7 +40,17 @@ body{
 .navbar .btn{
   background-color: #0077b6;
   border: none;
-  padding: 5px 20px
+  padding: 5px 20px;
+  box-shadow: inset 0 0 0 0 #ade8f4;;
+  transition: ease-out 0.3s;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.navbar .btn:hover{
+  box-shadow: inset 200px 0 0 0 #ade8f4;
+  color: black;
 }
 
 
