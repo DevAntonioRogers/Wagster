@@ -48,6 +48,7 @@
   outline: none;
   text-transform: uppercase;
   font-size: 0.8rem;
+ 
 }
 
 .btn--nav:hover{
@@ -85,6 +86,7 @@
   text-transform: uppercase;
   font-size: 0.8rem;
   border-radius: 5px 10px;
+  margin-top: 5px;
   
 }
 
@@ -104,6 +106,8 @@
   font-size: 0.8rem;
   border-radius: 5px 10px;
   border: none;
+  margin-top: 5px;
+  
 }
 
 .btn--join:hover{
@@ -111,6 +115,35 @@
   color: white;
 }
 
+.two-left--hero{
+  background-color: #0077b6;
+}
+
+.two-hero--heading{
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.two-hero--p{
+  color: white;
+  text-align: center;
+}
+
+.two-btn--hero{
+  background-color: #ade8f4;
+  padding: 5px 50px !important;
+  box-shadow: inset 0 0 0 0 #0077b6;
+  transition: ease-out 0.3s;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border-radius: 5px 10px;
+}
+.two-btn--hero:hover{
+  box-shadow: inset 300px 0 0 0 #0077b6;
+  color: white;
+}
 
 
 
