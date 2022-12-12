@@ -70,10 +70,13 @@
   text-align: center;
   letter-spacing: 0.5px;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
 }
 
 .hero--p{
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
 }
 
 .btn--hero{
@@ -123,11 +126,14 @@
   color: white;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
 }
 
 .two-hero--p{
   color: white;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
 }
 
 .two-btn--hero{
