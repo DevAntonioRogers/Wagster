@@ -151,6 +151,41 @@
   color: white;
 }
 
+.carousel{
+  box-shadow: 0 1px 3px rgb(17 24 39 / 9%);
+}
+
+
+
+.column--section h2{
+  color: #0077b6;
+  text-shadow: 3px 1px 1px rgba(173, 232, 244, 1);
+
+
+}
+
+.column--section i{
+  background-color: #0077b6;
+  border-radius: 50px;
+  padding: 10px;
+  color: white;
+  margin-bottom: 5px;
+ 
+}
+
+.column--section p{
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: rgb(107, 104, 104);
+}
+
+
+
+
+
+
+
+
 
 
 
