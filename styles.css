@@ -248,6 +248,7 @@ html{
 
 .card--section{
 background-color: #ade8f4;
+box-shadow: 0 1px 3px rgb(17 24 39 / 9%);
 }
 
 
@@ -255,11 +256,23 @@ background-color: #ade8f4;
   background-color: #dcf2f7;
 }
 
+/*************************** ABOUT US SECTION STYLES *******************************/
 
 
 
+.about-text{
+  line-height: 1.5rem;
+}
 
-
+.about-header{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  background-color: #ade8f4;
+  display: inline;
+  padding: 8px 25px;
+  border-radius: 50px 10px;
+  font-size: 1.9rem;
+}
 
 
 
