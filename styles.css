@@ -76,7 +76,7 @@ html{
   letter-spacing: 0.5px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.36);
   border-radius: 30px;
   padding: 10px;
 }
@@ -193,17 +193,16 @@ html{
 .card--section h1{
   color: #0077b6;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  text-shadow: 2px 1px 1px rgba(173, 232, 244, 1);
+  font-weight: 300;;
   text-transform: uppercase;
-  background-color: white;
-  padding: 15px 25px;
-  border-radius: 0px 50px;
+  background-color: rgba(255, 255, 255, 0.36);
   display: inline-block;
-  font-size: 1.5rem;
-  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-size: 1.5rem
+ }
 
-}
+
 
 .card--header{
   font-family: 'Montserrat' sans-serif;
@@ -215,7 +214,7 @@ html{
 }
 
 .card{
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
   border: none !important;
 }
@@ -249,6 +248,7 @@ html{
 
 .card--section{
 background-color: #ade8f4;
+}
 
 
 .card--btn{
