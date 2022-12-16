@@ -16,6 +16,8 @@ html{
 }
 
 
+
+
 /*************************** NAV BAR STYLES *******************************/
 
 .navbar--container{
@@ -191,8 +193,14 @@ html{
 .card--section h1{
   color: #0077b6;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 100;
+  font-weight: 200;
   text-transform: uppercase;
+  background-color: white;
+  padding: 15px 25px;
+  border-radius: 0px 50px;
+  display: inline-block;
+  font-size: 1.5rem;
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
 
 }
 
@@ -203,13 +211,12 @@ html{
   letter-spacing: 0.7px;
   font-size: 1.3rem;
   color: rgb(78, 77, 77);
-  
-  
 }
 
 .card{
   background-color: white;
-  
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  border: none !important;
 }
 
 .list-group-item{
@@ -237,9 +244,16 @@ html{
   font-family: 'Montserrat' sans-serif;
   font-size: 0.8rem;
   letter-spacing: 0.5px;
-  
 }
 
+.card--section{
+background-color: #ade8f4;
+box-shadow: 0 1px 3px rgb(17 24 39 / 9%);
+}
+
+.card--btn{
+  background-color: #dcf2f7;
+}
 
 
 
