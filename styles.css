@@ -11,6 +11,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 
 /*************************** NAV BAR STYLES *******************************/
 
@@ -182,6 +186,59 @@
 }
 
 
+/*************************** CARD SECTION STYLES *******************************/
+
+.card--section h1{
+  color: #0077b6;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+
+}
+
+.card--header{
+  font-family: 'Montserrat' sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  font-size: 1.3rem;
+  color: rgb(78, 77, 77);
+  
+  
+}
+
+.card{
+  background-color: white;
+  
+}
+
+.list-group-item{
+  background-color: #dcf2f7;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.progress-bar{
+  background-color: #0077b6 !important;
+}
+
+.card-link{
+  background-color: #0077b6;
+  padding: 5px 20px;
+  color: white;
+  border-radius: 50px;
+}
+
+.card--section i{
+  margin-right: 2px;
+}
+
+.card--section p{
+  font-family: 'Montserrat' sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  
+}
 
 
 
