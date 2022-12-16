@@ -274,6 +274,29 @@ box-shadow: 0 1px 3px rgb(17 24 39 / 9%);
   font-size: 1.9rem;
 }
 
+/*************************** ADOPT SECTION STYLES *******************************/
+
+.adopt-section{
+  background-color: #0077b6;
+}
+
+.adopt-button{
+  background-color: #dcf2f7;
+  padding: 10px 25px;
+  display: block !important;
+}
+
+.card-body{
+  background-color: #dcf2f7;
+}
+
+.card-body i{
+  background-color: #0077b6;
+  color: white;
+  border-radius: 50px;
+  padding: 15px;
+}
+
 
 
 
