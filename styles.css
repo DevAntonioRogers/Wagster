@@ -364,18 +364,14 @@ box-shadow: 0 1px 3px rgb(17 24 39 / 9%);
   border-radius: 50px;
   font-size: 1.8rem;
   padding: 10px 20px;
-  background-color: #ade8f4;
+  background-color: #ade8f4 !important;
   display: inline-block;
 }
 
-.contact--container{
-  background-color: #ade8f4;
-  background-image: url(/test-background\ 3.png);
-  background-size: cover;
-}
+
 
 .contact--inner{
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 
