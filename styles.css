@@ -368,13 +368,16 @@ box-shadow: 0 1px 3px rgb(17 24 39 / 9%);
   display: inline-block;
 }
 
-
-
 .contact--inner{
   background-color: rgb(255, 255, 255);
 }
 
+/*************************** FOOTER SECTION STYLES *******************************/
 
+.footer-logo{
+  width: 120px;
+  height: 20px;
+}
 
 
 
