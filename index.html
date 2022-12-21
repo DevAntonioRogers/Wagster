@@ -492,11 +492,13 @@
       </div>
 
       <!-- CONTACT SECTION -->
+
       <div class="container contact--inner text-center about-section mt-5">
         <h1 class="mt-4 mb-4 contact-us">Contact Us</h1>
         <div class="row">
-          <div class="col-md-6 col d-flex flex-column justify-content-center">
-            <form class="mt-md-5">
+          <div class="col-md-6 col d-flex flex-column justify-content-center mt-4">
+            <h1 class="text-center hours-heading">FILL OUT THIS FORM</h1>
+            <form id="contact">
               <div class="form-row">
                 <div class="col">
                   <input type="text" class="form-control" placeholder="First name" />
@@ -520,13 +522,13 @@
                   ></textarea>
                 </div>
               </div>
-              <div class="form-row d-flex justify-content-center">
+              <div class="form-row d-flex justify-content-center align-items-center">
                 <button class="btn mt-3 mb-5 contact-button">Submit</button>
               </div>
             </form>
           </div>
 
-          <div class="col-md-6 col-12 d-flex flex-column align-items-center justify-content-center mb-md-5">
+          <div class="col-md-6 col-12 d-flex flex-column justify-content-center mb-md-5">
             <h1 class="text-center hours-heading">Hours Of Operation</h1>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">Monday: 8am - 5pm</li>
@@ -541,21 +543,24 @@
     </div>
     <!-- CONTACT SECTION END -->
 
+    <!-- FOOTER SECTION START -->
+
     <footer class="site-footer p-3">
       <div class="container-fluid align-items-center justify-content-center">
         <div class="row">
           <div class="col-3 text-center border-right">
             <div class="text-center">
-              <a href="#" class="navbar-brand footer-logo"> WAGSTER </a>
+              <a href="#" class="footer-header">WAGSTER </a>
+
+              <ul class="list-unstyled mt-3">
+                <a href="#">
+                  <li class="list-item"><i class="fa-solid fa-location-dot"></i> 134 Jefferson Ave, Los Angeles</li>
+                </a>
+                <a href="#">
+                  <li class="list-item mt-3"><i class="fa-solid fa-phone"></i> 1800-434-2343</li>
+                </a>
+              </ul>
             </div>
-            <ul class="list-unstyled mt-3">
-              <a href="">
-                <li class="list-item"><i class="fa-solid fa-location-dot"></i> 134 Jefferson Ave, Los Angeles</li>
-              </a>
-              <a href="">
-                <li class="list-item mt-3"><i class="fa-solid fa-phone"></i> 1800-434-2343</li>
-              </a>
-            </ul>
           </div>
 
           <div class="col-3 border-right">
@@ -564,9 +569,10 @@
 
               <ul class="list-unstyled">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Sites</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#adopt">Adopt</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -587,9 +593,11 @@
           <div class="col-3">
             <div class="text-center">
               <h3 class="footer-header">KEEP IN TOUCH</h3>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-twitter"></i>
+              <div class="d-flex justify-content-center header-socials">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
             </div>
           </div>
         </div>

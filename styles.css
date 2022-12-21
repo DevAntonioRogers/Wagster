@@ -338,7 +338,6 @@ box-shadow: 0 1px 3px rgb(17 24 39 / 9%);
   font-size: 1.2rem;
   font-family: 'Montserrat' sans-serif;
   font-weight: 200;
-  text-decoration: underline 1px solid black;
 }
 
 .contact-button{
@@ -372,11 +371,38 @@ box-shadow: 0 1px 3px rgb(17 24 39 / 9%);
   background-color: rgb(255, 255, 255);
 }
 
+
 /*************************** FOOTER SECTION STYLES *******************************/
 
-.footer-logo{
-  width: 120px;
-  height: 20px;
+.footer-header{
+  font-family: 'Montserrat', sans-serif;
+  color: #0077b6 !important;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  text-decoration: underline 1px solid #0077b6;
+  font-size: 1.2rem;
+}
+
+.site-footer a{
+  letter-spacing: 1.2px;
+  color: rgb(48, 47, 47);
+  text-decoration: none;
+ 
+  
+}
+
+.site-footer a:hover{
+  text-decoration: none;
+  color: #0077b6;
+}
+
+.header-socials{
+  gap: 20px;
+}
+
+.header-socials i{
+  color: rgb(48, 47, 47);
 }
 
 
