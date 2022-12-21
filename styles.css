@@ -329,7 +329,7 @@ box-shadow: 0 1px 3px rgb(17 24 39 / 9%);
 
 /*************************** CONTACT SECTION STYLES *******************************/
 
-.about-section{
+.contact-section{
   box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
   padding: 30px;
 }
@@ -370,6 +370,35 @@ box-shadow: 0 1px 3px rgb(17 24 39 / 9%);
 .contact--inner{
   background-color: rgb(255, 255, 255);
 }
+
+/*************************** APP SECTION STYLES *******************************/
+
+.app-button{
+  width: 140px;
+  height: auto;
+}
+
+.app-boxes{
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  border-radius: 10px;
+  border: none;
+  background-color: #dcf2f7;
+}
+
+.app-section h3{
+  font-family: 'Montserrat' sans-serif;
+  font-weight: 100;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 20px 5px;
+  margin-top: 5px;
+  font-size: 1.3rem;
+  
+
+}
+
+
+
 
 
 /*************************** FOOTER SECTION STYLES *******************************/
