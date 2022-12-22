@@ -61,6 +61,30 @@ html{
   color: white;
 }
 
+/*************************** MODAL BAR STYLES *******************************/
+
+.modal-header{
+  background-image: url(/back-image-final.png);
+}
+
+.modal-title{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: rgb(91, 91, 91);
+  padding: 0px 15px;
+  border-radius: 50px;
+}
+
+.btn-signin{
+  background-color: #0077b6;
+  color: white;
+}
+
+.btn-signin:hover{
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+  color: white;
+}
+
 
 /*************************** HERO STYLES *******************************/
 

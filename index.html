@@ -49,12 +49,119 @@
           </ul>
         </div>
         <div class="d-none d-lg-block">
-          <button type="button" class="btn mr-2 btn--nav">Log In</button>
-          <button type="button" class="btn btn--nav">Sign Up</button>
+          <a role="button" data-toggle="modal" data-target="#loginModal"
+            ><button type="button" class="btn mr-2 btn--nav">Log In</button>
+          </a>
+
+          <a role="button" data-toggle="modal" data-target="#signupModal">
+            <button type="button" class="btn btn--nav">Sign Up</button>
+          </a>
         </div>
       </div>
     </nav>
     <!-- NAV BAR END -->
+
+    <!-- LOGIN MODAL START -->
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Login</h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label class="sr-only" for="loginEmail">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control form-control-sm"
+                      id="loginEmail"
+                      placeholder="Enter email"
+                    />
+                  </div>
+                  <div class="form-group col-12">
+                    <label class="sr-only" for="loginPassword">Password</label>
+                    <input
+                      type="password"
+                      class="form-control form-control-sm"
+                      id="loginPassword"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" />
+                      <label class="form-check-label"> Remember me</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                  <button type="submit" class="btn btn-sm ml-1 btn-signin">Sign in</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- LOGIN MODAL END -->
+
+    <!-- SIGN UP MODAL -->
+
+    <div id="signupModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Become a wagster member</h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-6">
+                    <label class="sr-only" for="firstName">First Name</label>
+                    <input type="text" class="form-control form-control-sm" id="firstName" placeholder="First Name" />
+                  </div>
+                  <div class="form-group col-6">
+                    <label class="sr-only" for="lastName">Last Name</label>
+                    <input type="text" class="form-control form-control-sm" id="lastName" placeholder="Last Name" />
+                  </div>
+                  <div class="form-group col-12">
+                    <label class="sr-only" for="loginEmail">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control form-control-sm"
+                      id="loginEmail"
+                      placeholder="Enter Email"
+                    />
+                  </div>
+                  <div class="form-group col-12">
+                    <label class="sr-only" for="loginPassword">Password</label>
+                    <input
+                      type="password"
+                      class="form-control form-control-sm"
+                      id="loginPassword"
+                      placeholder="Password"
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                  <button type="submit" class="btn btn-sm ml-1 btn-signin">Sign up</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIGN UP MODAL END -->
 
     <!-- HERO SECTION START -->
     <div id="carouselControls" class="carousel slide" data-ride="carousel">
@@ -578,7 +685,7 @@
     <footer class="site-footer">
       <div class="container-fluid align-items-center justify-content-center">
         <div class="row">
-          <div class="col-12 col-sm-6 col-md-3 text-center border-right">
+          <div class="col-12 col-md-3 text-center border-right">
             <div class="text-center">
               <a href="#" class="footer-header">WAGSTER </a>
 
@@ -593,7 +700,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-sm-6 col-md-3 border-right mb-3">
+          <div class="col-12 col-md-3 border-right mb-3">
             <div class="text-center">
               <h3 class="footer-header">QUICK LINKS</h3>
 
@@ -607,7 +714,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-sm-6 col-md-3 border-right mb-3">
+          <div class="col-12 col-md-3 border-right mb-3">
             <div class="text-center">
               <h3 class="footer-header">IMPORTANT</h3>
               <ul class="list-unstyled text-center">
@@ -620,7 +727,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-sm-6 col-md-3">
+          <div class="col-12 col-md-3">
             <div class="text-center">
               <h3 class="footer-header">KEEP IN TOUCH</h3>
               <div class="d-flex justify-content-center header-socials">
