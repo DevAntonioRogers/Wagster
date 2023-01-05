@@ -76,13 +76,13 @@ html{
 }
 
 .btn-signin{
-  background-color: #0077b6;
-  color: white;
+  background-color: #ade8f4;
+  color: rgb(74, 74, 74);
 }
 
 .btn-signin:hover{
   box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
-  color: white;
+  color: black;
 }
 
 
@@ -283,7 +283,7 @@ html{
 
 .card--section{
 background-color: #ade8f4;
-background-image: url(/back-image-final.png);
+background-image: url(back-image-final.png);
 background-size: cover;
 box-shadow: 0 1px 3px rgb(17 24 39 / 9%);
 }
@@ -315,7 +315,7 @@ box-shadow: 0 1px 3px rgb(17 24 39 / 9%);
 
 .adopt-section{
   background-color: #ade8f4;
-  background-image: url(/back-image-final.png);
+  background-image: url(back-image-final.png);
   background-size: cover;
 
 }
