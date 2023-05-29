@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <script src="https://kit.fontawesome.com/d96d1a7bdb.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/Favicons/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>WAGSTER</title>
+  </head>
+  <body>
+    <!-- NAV BAR START -->
+    <nav class="navbar navbar-expand-lg navbar--container justify-content-between navbar-light sticky-top">
+      <div class="container-fluid">
+        <div>
+          <a href="#" class="navbar-brand">WAGSTER</a>
+        </div>
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navBar"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navBar">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#aboutus">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#donate">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#adopt">Adopt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-none d-lg-block">
+          <a role="button" data-toggle="modal" data-target="#loginModal"
+            ><button type="button" class="btn mr-2 btn--nav">Log In</button>
+          </a>
+
+          <a role="button" data-toggle="modal" data-target="#signupModal">
+            <button type="button" class="btn btn--nav">Sign Up</button>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- NAV BAR END -->
+
+    <!-- LOGIN MODAL START -->
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Login</h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-12">
+                    <label class="sr-only" for="loginEmail">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control form-control-sm"
+                      id="loginEmail"
+                      placeholder="Enter email"
+                    />
+                  </div>
+                  <div class="form-group col-12">
+                    <label class="sr-only" for="loginPassword">Password</label>
+                    <input
+                      type="password"
+                      class="form-control form-control-sm"
+                      id="loginPassword"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <div class="col">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" />
+                      <label class="form-check-label"> Remember me</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                  <button type="submit" class="btn btn-sm ml-1 btn-signin">Sign in</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- LOGIN MODAL END -->
+
+    <!-- SIGN UP MODAL -->
+
+    <div id="signupModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Become a wagster member</h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-6">
+                    <label class="sr-only" for="firstName">First Name</label>
+                    <input type="text" class="form-control form-control-sm" id="firstName" placeholder="First Name" />
+                  </div>
+                  <div class="form-group col-6">
+                    <label class="sr-only" for="lastName">Last Name</label>
+                    <input type="text" class="form-control form-control-sm" id="lastName" placeholder="Last Name" />
+                  </div>
+                  <div class="form-group col-12">
+                    <label class="sr-only" for="loginEmail">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control form-control-sm"
+                      id="loginEmail"
+                      placeholder="Enter Email"
+                    />
+                  </div>
+                  <div class="form-group col-12">
+                    <label class="sr-only" for="loginPassword">Password</label>
+                    <input
+                      type="password"
+                      class="form-control form-control-sm"
+                      id="loginPassword"
+                      placeholder="Password"
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                  <button type="submit" class="btn btn-sm ml-1 btn-signin">Sign up</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIGN UP MODAL END -->
+
+    <!-- HERO SECTION START -->
+    <div id="carouselControls" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselControls" data-slide-to="0" class="active carousel-toggle"></li>
+        <li data-target="#carouselControls" data-slide-to="1" class="carousel-toggle"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container-fluid">
+            <div class="row align-items-center left--hero">
+              <div class="col-md mt-4">
+                <h1 class="hero--heading mb-4">Find an Animal in Need and Donate to their Wishlist</h1>
+                <p class="hero--p">
+                  WAGSTER helps give all animals a healthy life and a loving home. We enable animal rescues to create
+                  fundraisers and wishlists to support animals in their care.
+                </p>
+                <div class="d-flex justify-content-center hero--btn">
+                  <button type="button" class="btn btn--hero">Find Animals to Help</button>
+                  <button type="button" class="btn btn--join">Join the Wagster Club</button>
+                </div>
+              </div>
+              <div class="col-md">
+                <img class="img-fluid w-100 d-block" src="Images/right-hero-section-image.png" alt="First slide" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container-fluid">
+            <div class="row align-items-center two-left--hero">
+              <div class="col-md mt-4">
+                <h1 class="two-hero--heading mb-4">Shower a Rescue with Wishlist Gifts and Donations</h1>
+                <p class="two-hero--p">
+                  WAGSTER is excited to partner with MASTERFEEDS in providing quality recipes for dogs and cats of all
+                  shapes and sizes. For every decision made, for every wishlist created, we put pets first.
+                </p>
+                <div class="d-flex justify-content-center hero--btn">
+                  <button type="button" class="btn two-btn--hero">Find Animals to Help</button>
+                </div>
+              </div>
+              <div class="col-md">
+                <img class="img-fluid w-100 d-block" src="Images/slide2-image.png" alt="First slide" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- HERO SECTION END -->
+
+    <!-- INFO SQUARES START -->
+    <section class="column--section mt-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 border-right mb-3">
+            <div class="text-center p-3">
+              <div class="icon">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div>
+                <h2>250K+</h2>
+                <p>WAGSTER Members</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 border-right mb-3">
+            <div class="text-center p-3">
+              <div class="icon">
+                <i class="fa-solid fa-kit-medical"></i>
+              </div>
+              <div>
+                <h2>5K+</h2>
+                <p>Shelter & Rescue Partners</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 border-right mb-3">
+            <div class="text-center p-3">
+              <div class="icon">
+                <i class="fa-solid fa-handshake-angle"></i>
+              </div>
+              <div>
+                <h2>34.2K</h2>
+                <p>Campaigns Funded</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 mb-3">
+            <div class="text-center p-3">
+              <div class="icon">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+              </div>
+              <div>
+                <h2>$60.7M</h2>
+                <p>Total Donations Raised</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- INFO SQUARES END -->
+
+    <!-- CARDS SECTIONS START -->
+
+    <div class="container-fluid card--section p-5 text-center" id="donate">
+      <h1 class="mb-5">Featured Campaigns</h1>
+
+      <div class="row">
+        <!------------CARD 1 ------------>
+        <div class="col-xl-3 col col-md-6 mb-4 d-flex align-items-center justify-content-center">
+          <div class="card" style="width: 23rem">
+            <img class="card-img-top" src="Optimized Images/bubbles-optimzed.jpg" alt="bubbles" />
+            <div class="card-body">
+              <h5 class="card-title text-center card--header">Bubbles</h5>
+              <p class="card-text text-center">Sickly Senenior Cat in need of surgery on her stomach</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-money-bill-1-wave mb-2"></i>
+                78% FUNDED
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped"
+                    role="progressbar"
+                    style="width: 75%"
+                    aria-valuenow="75"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </li>
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-location-dot"></i>
+                Raleigh, North Carolina
+              </li>
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-house"></i>
+                Happy Tailz Cat Rescue, Inc
+              </li>
+            </ul>
+            <div class="card-body text-center card--btn">
+              <a href="#" class="card-link">Donate</a>
+              <a href="#" class="card-link">More Info</a>
+            </div>
+          </div>
+        </div>
+        <!------------CARD 2 ------------>
+        <div class="col-xl-3 col col-md-6 mb-4 d-flex align-items-center justify-content-center">
+          <div class="card" style="width: 23rem">
+            <img class="card-img-top" src="Images/Peanut.jpg" alt="image of peanut" />
+            <div class="card-body">
+              <h5 class="card-title text-center card--header">Peanut</h5>
+              <p class="card-text text-center">Peanut needs an emergency operation on his knee</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-money-bill-1-wave mb-2"></i>
+                24% FUNDED
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped bg-success"
+                    role="progressbar"
+                    style="width: 25%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </li>
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-location-dot"></i>
+                Albany, New York
+              </li>
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-house"></i>
+                Albany Search and Rescue
+              </li>
+            </ul>
+            <div class="card-body text-center card--btn">
+              <a href="#" class="card-link">Donate</a>
+              <a href="#" class="card-link">More Info</a>
+            </div>
+          </div>
+        </div>
+        <!------------CARD 3 ------------>
+        <div class="col-xl-3 col col-md-6 mb-4 d-flex align-items-center justify-content-center">
+          <div class="card" style="width: 23rem">
+            <img class="card-img-top" src="Optimized Images/rubble-optimized.jpg" alt="image of rubble" />
+            <div class="card-body">
+              <h5 class="card-title text-center card--header">Rubble</h5>
+              <p class="card-text text-center">Rubble was rescued and is in need of an operation</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-money-bill-1-wave mb-2"></i>
+                98% FUNDED
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped"
+                    role="progressbar"
+                    style="width: 98%"
+                    aria-valuenow="98"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </li>
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-location-dot"></i>
+                Los Angeles, California
+              </li>
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-house"></i>
+                Waggy Rescue and Friends
+              </li>
+            </ul>
+            <div class="card-body text-center card--btn">
+              <a href="#" class="card-link">Donate</a>
+              <a href="#" class="card-link">More Info</a>
+            </div>
+          </div>
+        </div>
+        <!------------CARD 4 ------------>
+        <div class="col-xl-3 col col-md-6 mb-4 d-flex align-items-center justify-content-center">
+          <div class="card" style="width: 23rem">
+            <img class="card-img-top" src="Optimized Images/daisy-optimized.jpg" alt="image of daisey" />
+            <div class="card-body">
+              <h5 class="card-title text-center card--header">Daisy</h5>
+              <p class="card-text text-center">Daisy is an older cat who needs medication for her pain</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-money-bill-1-wave mb-2"></i>
+                53% FUNDED
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped"
+                    role="progressbar"
+                    style="width: 53%"
+                    aria-valuenow="53"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </li>
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-location-dot"></i>
+                Nashville, Tennessee
+              </li>
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-house"></i>
+                We love Animals Shelter
+              </li>
+            </ul>
+            <div class="card-body text-center card--btn">
+              <a href="#" class="card-link">Donate</a>
+              <a href="#" class="card-link">More Info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARDS SECTION END -->
+
+    <!-- ABOUT US SECTION START -->
+    <div class="container-fluid mt-3 px-4 py-1" id="aboutus">
+      <div class="row">
+        <div class="col-12 col-md-6 text-center d-flex align-items-center flex-column justify-content-center">
+          <h1 class="text-left mb-5 about-header">What Is Wagster?</h1>
+          <p class="text-center about-text">
+            We exist because we believe in a world where no pet is euthanized for financial reasons. We are a group of
+            passionate animal lovers. And we know how easy it is to be down on your luck, to fall through the cracks, to
+            have to choose between your pet and paying your bills. So we set out on a mission to change the way pet
+            safety nets work. To solve this problem, we had to innovate. Wagster is a revolutionary, not-for-profit
+            crowdfunding model.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+          <img class="img-fluid w-75 d-block" src="Images/left side about.png" alt="" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+          <img class="img-fluid w-75 d-block" src="Images/aboutus-image.png" alt="" />
+        </div>
+
+        <div class="col-12 col-md-6 text-center d-flex align-items-center flex-column justify-content-center">
+          <h1 class="text-left mb-5 about-header">'I can't take care of you.'</h1>
+          <p class="text-center about-text">
+            Wagster exists because too many pet owners have had this tragic experience. And while everyone's path to
+            this moment is different, the experience is the same: You love your dog or cat dearly, but you're faced with
+            the realization that your pet needs a medical procedure that you can't afford. Reality hits like a ton of
+            bricks. This innocent companion, who looks so lovingly at you, needs something you can't provide.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- END ABOUT US SECTION -->
+
+    <!-- BOTTOM COLUMNS START -->
+    <div class="container-fluid adopt-section p-5 text-center mb-4" id="adopt">
+      <h1 class="mb-5">Adopt a Pet</h1>
+
+      <div class="row">
+        <!------------CARD 1 ------------>
+        <div class="col-xl-3 col col-md-6 mb-4 d-flex align-items-center justify-content-center">
+          <div class="card" style="width: 23rem">
+            <img class="card-img-top" src="Optimized Images/ace-optimized.jpg" alt="bubbles" />
+            <div class="card-body">
+              <h5 class="card-title text-center card--header">Ace</h5>
+              <p class="card-text text-center">Very happy and friendly. Loves to go on walks and play catch</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-paw"></i>
+                Labrador
+              </li>
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-location-dot"></i>
+                Brooklyn, New York
+              </li>
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-syringe"></i>
+                Shots up to Date
+              </li>
+            </ul>
+            <div
+              class="card-body text-center card--btn d-flex justify-content-center align-items-center card-btn-adopt"
+            >
+              <a href="#" class="card-link-adopt">Adopt Me</a>
+              <a href="#" class="card-link-adopt">More Info</a>
+            </div>
+          </div>
+        </div>
+        <!------------CARD 2 ------------>
+        <div class="col-xl-3 col col-md-6 mb-4 d-flex align-items-center justify-content-center">
+          <div class="card" style="width: 23rem">
+            <img class="card-img-top" src="Optimized Images/tyson-optimized.jpg" alt="bubbles" />
+            <div class="card-body">
+              <h5 class="card-title text-center card--header">Tyson</h5>
+              <p class="card-text text-center">VERY playful and just a happy dog in general.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-paw"></i>
+                Shiba Inu
+              </li>
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-location-dot"></i>
+                Miami, Florida
+              </li>
+              <li class="list-group-item text-center">
+                <i class="fa-brands fa-leanpub"></i>
+                Highly Trained
+              </li>
+            </ul>
+
+            <div
+              class="card-body text-center card--btn d-flex justify-content-center align-items-center card-btn-adopt"
+            >
+              <a href="#" class="card-link-adopt">Adopt Me</a>
+              <a href="#" class="card-link-adopt">More Info</a>
+            </div>
+          </div>
+        </div>
+        <!------------CARD 3 ------------>
+        <div class="col-xl-3 col col-md-6 mb-4 d-flex align-items-center justify-content-center">
+          <div class="card" style="width: 23rem">
+            <img class="card-img-top" src="Optimized Images/Stacy-optimized.jpg" alt="bubbles" />
+            <div class="card-body">
+              <h5 class="card-title text-center card--header">Stacy</h5>
+              <p class="card-text text-center">Stacy is a highly trained cat who loves to play and climb</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-paw"></i>
+                American Shorthair
+              </li>
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-location-dot"></i>
+                Atlanta, Georgia
+              </li>
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-face-smile"></i>
+                Very Playful
+              </li>
+            </ul>
+
+            <div
+              class="card-body text-center card--btn d-flex justify-content-center align-items-center card-btn-adopt"
+            >
+              <a href="#" class="card-link-adopt">Adopt Me</a>
+              <a href="#" class="card-link-adopt">More Info</a>
+            </div>
+          </div>
+        </div>
+        <!------------CARD 4 ------------>
+        <div class="col-xl-3 col col-md-6 mb-4 d-flex align-items-center justify-content-center">
+          <div class="card" style="width: 23rem">
+            <img class="card-img-top" src="Images/Rex.png" alt="bubbles" />
+            <div class="card-body">
+              <h5 class="card-title text-center card--header">Rex</h5>
+              <p class="card-text text-center">Rex loves his toys. He also loves to eat and sleep lol.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-paw"></i>
+                Jack Russel
+              </li>
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-location-dot"></i>
+                Clevland, Ohio
+              </li>
+              <li class="list-group-item text-center">
+                <i class="fa-solid fa-baseball"></i>
+                Loves Toys
+              </li>
+            </ul>
+
+            <div
+              class="card-body text-center card--btn d-flex justify-content-center align-items-center card-btn-adopt"
+            >
+              <a href="#" class="card-link-adopt">Adopt Me</a>
+              <a href="#" class="card-link-adopt">More Info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT SECTION -->
+
+      <div class="container contact--inner text-center contact-section mt-5">
+        <h1 class="mt-4 mb-4 contact-us">Contact Us</h1>
+        <div class="row">
+          <div class="col-md-6 col d-flex flex-column justify-content-center mt-4">
+            <h1 class="text-center hours-heading">FILL OUT THIS FORM</h1>
+            <form id="contact">
+              <div class="form-row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="First name" />
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Last name" />
+                </div>
+              </div>
+              <div class="form-row mt-4">
+                <div class="col">
+                  <input type="email" class="form-control" placeholder="Email" />
+                </div>
+              </div>
+              <div class="form-row mt-4">
+                <div class="col">
+                  <textarea
+                    class="form-control"
+                    id="textArea"
+                    placeholder="Tell us whats going on..."
+                    rows="3"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="form-row d-flex justify-content-center align-items-center">
+                <button class="btn mt-3 mb-5 contact-button">Submit</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-6 col-12 d-flex flex-column justify-content-center mb-md-5">
+            <h1 class="text-center hours-heading">Hours Of Operation</h1>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Monday: 8am - 5pm</li>
+              <li class="list-group-item">Tuesday: 9am - 6pm</li>
+              <li class="list-group-item">Wednesday: 8am - 5pm</li>
+              <li class="list-group-item">Thursday: 8am - 5pm</li>
+              <li class="list-group-item">Friday - Sunday: Closed</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTACT SECTION END -->
+
+    <!-- APP SECTION START -->
+    <div class="container-fluid mt-5 mb-5 app-section">
+      <div class="row">
+        <div class="col-12 mb-lg-0 mb-3 col-lg-4">
+          <div class="container d-flex justify-content-center align-items-center flex-column app-boxes">
+            <i class="fa-solid fa-shield-halved mt-2"></i>
+            <h3>Secure Payments</h3>
+            <span>All payments are sercured</span>
+          </div>
+        </div>
+        <div class="col-12 mb-lg-0 mb-5 col-lg-4">
+          <div class="container d-flex justify-content-center align-items-center flex-column app-boxes">
+            <i class="fa-solid fa-bolt-lightning mt-2"></i>
+            <h3>Fast Support</h3>
+            <span>Lighting fast response time</span>
+          </div>
+        </div>
+
+        <div class="col-12 d-flex justify-content-center flex-column align-items-center col-lg-4">
+          <h4 class="ml-3">Download Our App</h4>
+          <div>
+            <img class="app-button" src="Images/apple-play-button.png" alt="" />
+            <img class="app-button" src="Images/google-button.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- APP SECTION END -->
+
+    <!-- FOOTER SECTION START -->
+
+    <footer class="site-footer">
+      <div class="container-fluid align-items-center justify-content-center">
+        <div class="row">
+          <div class="col-12 col-md-3 text-center border-right">
+            <div class="text-center">
+              <a href="#" class="footer-header">WAGSTER </a>
+
+              <ul class="list-unstyled mt-3">
+                <a href="#">
+                  <li class="list-item"><i class="fa-solid fa-location-dot"></i> 134 Jefferson Ave, Los Angeles</li>
+                </a>
+                <a href="#">
+                  <li class="list-item mt-3"><i class="fa-solid fa-phone"></i> 1800-434-2343</li>
+                </a>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3 border-right mb-3">
+            <div class="text-center">
+              <h3 class="footer-header">QUICK LINKS</h3>
+
+              <ul class="list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#adopt">Adopt</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3 border-right mb-3">
+            <div class="text-center">
+              <h3 class="footer-header">IMPORTANT</h3>
+              <ul class="list-unstyled text-center">
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Adopt Policy</a></li>
+                <li><a href="#">Donate Policy</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3">
+            <div class="text-center">
+              <h3 class="footer-header">KEEP IN TOUCH</h3>
+              <div class="d-flex justify-content-center header-socials">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;1,600&display=swap');
+
+
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+
+/*************************** NAV BAR STYLES *******************************/
+
+.navbar--container{
+  background-color: white;
+  box-shadow: 0 1px 3px rgb(17 24 39 / 9%);
+}
+
+.navbar-brand{
+  font-family: 'Montserrat', sans-serif;
+  color: #0077b6 !important;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+}
+.navbar img{
+  width: 120px;
+  height: auto;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: #0077b6 !important;
+}
+
+
+.btn--nav{
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  transition: ease-out 0.3s;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+ 
+}
+
+.btn--nav:hover{
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+  color: white;
+}
+
+/*************************** MODAL BAR STYLES *******************************/
+
+.modal-header{
+  background-image: url(/back-image-final.png);
+}
+
+.modal-title{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: rgb(91, 91, 91);
+  padding: 0px 15px;
+  border-radius: 50px;
+}
+
+.btn-signin{
+  background-color: #ade8f4;
+  color: rgb(74, 74, 74);
+}
+
+.btn-signin:hover{
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+  color: black;
+}
+
+
+/*************************** HERO STYLES *******************************/
+
+
+
+.left--hero{
+  background-color: #ade8f4;
+}
+
+.hero--heading{
+  color: #0077b6;
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  background-color: rgba(255, 255, 255, 0.36);
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.hero--p{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+.btn--hero{
+  background-color: #0077b6;
+  color: white;
+  margin-left: 5px;
+  transition: ease-out 0.3s;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border-radius: 5px 10px;
+  margin-top: 5px;
+  
+}
+
+.btn--hero:hover{
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+  color: white;
+
+}
+
+.btn--join{
+  background-color: white;
+  color: black;
+  margin-left: 5px;
+  transition: ease-out 0.3s;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border-radius: 5px 10px;
+  border: none;
+  margin-top: 5px;
+  
+}
+
+.btn--join:hover{
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+.hero--btn{
+  gap: 20px;
+}
+
+.two-left--hero{
+  background-color: #0077b6;
+}
+
+.two-hero--heading{
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+.two-hero--p{
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+.two-btn--hero{
+  background-color: #ade8f4;
+  padding: 5px 50px !important;
+  transition: ease-out 0.3s;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border-radius: 5px 10px;
+  color: black;
+}
+.two-btn--hero:hover{
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+  color:black;
+}
+
+.carousel{
+  box-shadow: 0 1px 3px rgb(17 24 39 / 9%);
+}
+
+.carousel-toggle{
+  background-color: rgb(255, 255, 255) !important;
+}
+
+/*************************** COLUMNS STYLES *******************************/
+
+.column--section h2{
+  color: #0077b6;
+  text-shadow: 3px 1px 1px rgba(173, 232, 244, 1);
+
+
+}
+
+.column--section i{
+  background-color: #0077b6;
+  border-radius: 50px;
+  padding: 10px;
+  color: white;
+  margin-bottom: 5px;
+ 
+}
+
+.column--section p{
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: rgb(107, 104, 104);
+}
+
+
+/*************************** CARD SECTION STYLES *******************************/
+
+.card--section h1{
+  color: #0077b6;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;;
+  text-transform: uppercase;
+  background-color: white;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-size: 1.5rem
+ }
+
+
+
+.card--header{
+  font-family: 'Montserrat' sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  font-size: 1.3rem;
+  color: rgb(52, 51, 51);
+}
+
+.card{
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  border: none !important;
+}
+
+.list-group-item{
+  background-color: #dcf2f7;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.progress-bar{
+  background-color: #0077b6 !important;
+}
+
+.card-link{
+  background-color: #0077b6;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 50px;
+  transition: ease-out 0.3s;
+}
+
+.card-link:hover{
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+  color: white;
+}
+
+.card--section i{
+  margin-right: 2px;
+}
+
+.card--section p{
+  font-family: 'Montserrat' sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.card--section{
+background-color: #ade8f4;
+background-image: url(Images/back-image-final.png);
+background-size: cover;
+box-shadow: 0 1px 3px rgb(17 24 39 / 9%);
+}
+
+
+.card--btn{
+  background-color: #dcf2f7;
+}
+
+/*************************** ABOUT US SECTION STYLES *******************************/
+
+
+
+.about-text{
+  line-height: 1.5rem;
+}
+
+.about-header{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  background-color: #ade8f4;
+  display: inline;
+  padding: 8px 25px;
+  border-radius: 50px 10px;
+  font-size: 1.9rem;
+}
+
+/*************************** ADOPT SECTION STYLES *******************************/
+
+.adopt-section{
+  background-color: #ade8f4;
+  background-image: url(Images/back-image-final.png);
+  background-size: cover;
+
+}
+
+.card-link-adopt{
+  background-color: #0077b6;
+  padding: 3px 10px;
+  border-radius: 50px;
+  color: white;
+  gap: 10px;
+  transition: ease-out 0.3s;
+}
+
+.card-link-adopt:hover{
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+  color: white;
+  text-decoration: none;
+}
+
+.card-btn-adopt{
+  gap: 20px;
+}
+
+.adopt-section h1{
+  color: #0077b6;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;;
+  text-transform: uppercase;
+  background-color: white;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-size: 1.5rem
+}
+
+/*************************** CONTACT SECTION STYLES *******************************/
+
+.contact-section{
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  padding: 30px;
+}
+
+.hours-heading{
+  font-size: 1.2rem;
+  font-family: 'Montserrat' sans-serif;
+  font-weight: 200;
+}
+
+.contact-button{
+  background-color: #0077b6;
+  color: white;
+  margin-left: 5px;
+  transition: ease-out 0.3s;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border-radius: 50px;
+  margin-top: 5px;
+}
+
+.contact-button:hover{
+  box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.77);
+  color: white;
+}
+
+.contact-us{
+  font-family: 'Montserrat' sans-serif;
+  font-weight: 300;
+  border-radius: 50px;
+  font-size: 1.8rem;
+  padding: 10px 20px;
+  background-color: #ade8f4 !important;
+  display: inline-block;
+}
+
+.contact--inner{
+  background-color: rgb(255, 255, 255);
+}
+
+/*************************** APP SECTION STYLES *******************************/
+
+.app-button{
+  width: 140px;
+  height: auto;
+}
+
+.app-boxes{
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+  border-radius: 10px;
+  border: none;
+  background-color: #dcf2f7;
+}
+
+.app-section h3{
+  font-family: 'Montserrat' sans-serif;
+  font-weight: 100;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 20px 5px;
+  margin-top: 5px;
+  font-size: 1.3rem;
+  
+
+}
+
+
+
+
+
+/*************************** FOOTER SECTION STYLES *******************************/
+
+.footer-header{
+  font-family: 'Montserrat', sans-serif;
+  color: #0077b6 !important;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  text-decoration: underline 1px solid #0077b6;
+  font-size: 1.2rem;
+}
+
+.site-footer a{
+  letter-spacing: 1.2px;
+  color: rgb(48, 47, 47);
+  text-decoration: none;
+  
+  
+}
+
+.site-footer a:hover{
+  text-decoration: none;
+  color: #0077b6;
+}
+
+.header-socials{
+  gap: 20px;
+}
+
+.header-socials i{
+  color: rgb(48, 47, 47);
+}
+
+
+
+
+
+
+
+
+
